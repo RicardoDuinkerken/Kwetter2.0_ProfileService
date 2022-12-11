@@ -1,0 +1,14 @@
+﻿{
+  "profiles": {
+    "AccountService.Api": {
+      "commandName": "Project",
+      "dotnetRunMessages": "true",
+      "launchBrowser": false,
+      "applicationUrl": "http://localhost:5009;https://localhost:5010",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "Username": "root"
+      }
+    }
+  }
+}

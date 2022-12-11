@@ -1,0 +1,38 @@
+syntax = "proto3";
+option csharp_namespace = "ProfileService.Grpc";
+
+service ProfileService{
+  rpc CreateProfile (CreateProfileRequest) returns (ProfileResponse);
+  rpc UpdateProfile (UpdateProfileRequest) returns (ProfileResponse);
+  rpc DeleteProfile (DeleteProfileRequest) returns (DeleteProfileResponse);
+}
+
+message CreateProfileRequest {
+  string username = 1;
+}
+
+message UpdateProfileRequest {
+  int64 id = 1;
+  string username = 2;
+  string location = 3;
+  string age = 4;
+  string weblink = 5;
+  string bio = 6;
+}
+
+message DeleteProfileRequest {
+  int64 id = 1;
+}
+
+message ProfileResponse {
+  int64 id = 1;
+  string username = 2;
+  string location = 3;
+  string age = 4;
+  string weblink = 5;
+  string bio = 6;
+}
+
+message DeleteProfileResponse {
+  int64 id = 1;
+}
