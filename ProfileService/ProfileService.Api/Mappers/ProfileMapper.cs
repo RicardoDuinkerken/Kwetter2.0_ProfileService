@@ -21,6 +21,7 @@ public class ProfileMapper
            Username = request.Username,
            Age = request.Age,
            Bio = request.Bio,
+           WebLink = request.Weblink,
            Location = request.Location
         };
     }
@@ -33,6 +34,7 @@ public class ProfileMapper
             Username = profile.Username,
             Age = profile.Age,
             Bio = profile.Bio,
+            Weblink = profile.WebLink,
             Location = profile.Location
         };
     }

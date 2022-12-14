@@ -18,6 +18,10 @@ public class ProfileService : IProfileService
     
     public async Task<Profile> CreateProfileAsync(Profile profile)
     {
+        profile.Age = "";
+        profile.Bio = "";
+        profile.WebLink = "";
+        profile.Location = "";
         profile = await _profileRepository.CreateAsync(profile);
 
         _logger.LogInformation("Profile created with id: {Id}", profile.Id);

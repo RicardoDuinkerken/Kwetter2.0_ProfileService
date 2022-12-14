@@ -5,6 +5,7 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <UserSecretsId>Kwetter-d306c602-50f4-46fd-adf4-a8148df466a1</UserSecretsId>
     </PropertyGroup>
 
     <ItemGroup>
@@ -19,6 +20,12 @@
     <ItemGroup>
       <ProjectReference Include="..\ProfileService.Core\ProfileService.Core.csproj" />
       <ProjectReference Include="..\ProfileService.Grpc\ProfileService.Grpc.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="appsettings.Development.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
     </ItemGroup>
 
 </Project>
